@@ -20,7 +20,7 @@
   "author": "nrk9819",
   "license": "ISC",
   "peerDependencies": {
-    "esbuild": "^0.17.19"
+    "esbuild": ">= 0.17.19"
   },
   "dependencies": {
     "fs-extra": "^11.1.1"
