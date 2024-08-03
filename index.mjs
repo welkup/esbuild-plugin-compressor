@@ -59,7 +59,7 @@ export const compressor = options => ({
           const fileName = basename(filePath);
           const nestedDirs = dirname(filePath).substring(buildOutputDir.length);
           const content = await readFile(filePath, 'utf8');
-          const compressedContent = await compressContent(content, outputExt);
+          const compressedContent = await compressContent(content, options?.compressType);
           const compressedFileName = `${fileName}${outputExt}`;
           const compressedFilePath = join(outdir, nestedDirs, compressedFileName);
 
